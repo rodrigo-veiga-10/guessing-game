@@ -12,14 +12,14 @@ fn main() {
 
     io::stdin()
         .read_line(&mut language)
-        .expect("Falha ao ler a linha");
+        .expect("Failed to read line");
 
     if language.trim() == "1" {
         portuguese(); 
     } else if language.trim() == "2" {
         english();
     } else {
-        println!("Entrada inválida. Tente novamente!");
+        println!("Invalid input. Try again!");
         main();
     }
 
